@@ -20,6 +20,7 @@
   async function deSelectCountry() {
     selectedCountry.value = 0
     const data = await getData()
+    title.value = 'Global'
     date.value = data.Date
     stats.value = data.Global
     countries.value = data.Countries
